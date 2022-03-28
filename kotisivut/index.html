@@ -1,22 +1,55 @@
 <html>
     <head>
+        <link rel="stylesheet" href="styles.css">
         <title>
-            Harjoitus 1
+            Kotisivut
         </title>
     </head>
     <body>
+        <style>
+            .container {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: nowrap;
+              background-color: white;
+              align-items: left;
+            }
+            
+            .container > div {
+              background-color: #EFEFEF;
+              margin: 10px;
+              padding-left: 10px;
+              text-align: left;
+              font-size: normal;
+              border: 2px solid #BCBCBC
+            }
+            </style>
+ 
+    <div class="container">
+
         <h1>Otso Rantala</h1>
+       
+        <div>
+        <h1>Tietoa minusta</h1>
             <p>Olen 17 vuotias poika ja asun Jokelassa.</p>
             <br>
+        </div>
+        <div>
         <h2>Harrastukseni</h2>
             <p>Harrastan videopelejen pelaamista ja silloin tällöin sulkapalloa. </p>
             <br>
+        </div>
+        <div>
         <h2>Koulutukseni</h2>
-            <p>Olen käynyt peruskoulun ja yhden vuoden lukiota, jonka jälkeen siirryin ammattikouluun IT-alalle</p>
-            <p>opiskelemaan ohjelmistokehittäjäksi, missä olen tällä hetkellä ensimmäistä vuotta.</p>
+            <p>Olen käynyt peruskoulun ja yhden vuoden lukiota, jonka jälkeen siirryin ammattikouluun IT-alalle opiskelemaan ohjelmistokehittäjäksi, missä olen tällä hetkellä ensimmäistä vuotta.</p>
             <br>
+        </div>
+        <div>
         <h2>Koirani</h2>
             <p>Minulla on koira nimeltään Titi. Hän on espanjan vinttikoira, joka tunnetaan myös nimellä galgo.</p>
             <img src="https://alchetron.com/cdn/galgo-espaol-8d81fe12-91c8-4de3-a594-b071f94ea87-resize-750.jpeg" alt="galgo">
+            <p></p>
+        </div>
+    </div>
     </body>
 </html>
