@@ -37,5 +37,5 @@ function getUsers() {
     var listOfUsers = users.map(user => {
         return "<div>" + user.firstName + " " + user.lastName + "</div>"
       });
-      document.getElementById("users").innerHTML = listOfUsers;
+      document.getElementById("users").innerHTML = listOfUsers.join("");
 }
