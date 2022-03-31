@@ -98,7 +98,7 @@ function getIncompleteTasks() {
     fetch('https://jsonplaceholder.typicode.com/todos')
         .then(response => response.json())
         .then(tasks => {
-            var listOfTasks = tasks.filter(tasks => tasks.completed === false).map(tasks => {
+            var listOfTasks = tasks.filter(task => task.completed === false).map(tasks => {
                 return "<div>" + tasks.id + ": " + tasks.title + "</div>"
               });
               console.log(tasks);
