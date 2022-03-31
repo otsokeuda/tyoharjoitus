@@ -81,3 +81,15 @@ function getCars() {
       console.log(cars);
       document.getElementById("cars").innerHTML = listOfCars.join("");
 }
+
+function getTasks() {
+fetch('https://jsonplaceholder.typicode.com/todos')
+    .then(response => response.json())
+    .then(tasks => {
+        var listOfTasks = tasks.map(tasks => {
+            return "<div>" + tasks.userId + "<br>" + tasks.id + "<br>" + tasks.title + "<br>" + tasks.completed + "<br>" + "<br>" + "</div>"
+          });
+          console.log(tasks);
+          document.getElementById("tasks").innerHTML = listOfTasks.join("");
+    });
+}
